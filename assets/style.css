@@ -47,19 +47,23 @@ aside section h2 {
 
 .prework {
     display: flex;
+    align-items: flex-end;
     height: 300px;
     width: 300px;
     background-color: aqua;
     padding: 10px solid blue;
-    border: 10px white;
-    margin: 10px solid black;
 }
 
-.prework {
+.refactor, .mp1, .mp2, .run {
     display: flex;
     align-items: flex-end;
-    padding: 30px;
-}
+    height: 150px;
+    width: 150px;
+    background-color: rgb(25, 12, 138);
+    padding: 10px solid blue;
+    color: whitesmoke;
+} 
+
 
 footer ul {
     display: flex;
