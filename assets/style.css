@@ -1,0 +1,50 @@
+.header {
+   padding: 10px;
+   margin: 5px solid black;
+   background-color: darkgrey;
+}
+
+.header h1 {
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    background-color: aquamarine;
+    font-size: large;
+   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
+
+.navbar a {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.banner {
+    display: block; 
+    color: brown;
+    padding: 10px;
+    width: auto;
+    height: 80px;
+    background-color: blue;
+    
+}
+
+.banner h2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    /* how do i move to bottom of box */
+}
+
+aside section h2 {
+    display: flex;
+    justify-content: end;
+}
+
+.prework {
+    display: block;
+    padding: 10px solid blue;
+    border: 10px white;
+    margin: 10px solid black;
+}
+
