@@ -37,56 +37,10 @@ nav {
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
-    /* how do i move to bottom of box */
+    padding: 10px 10px;
 }
 
 main {
     display: flex;
-}
-
-aside {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    float: left;
-    margin-right: 100px black;
-    font-size: 40px;
-}
-
-figure {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.prework {
-    display: flex;
-    align-items: flex-end;
-    height: 300px;
-    width: 300px;
-    background-color: aqua;
-    padding: 10px solid blue;
-}
-
-.refactor, .mp1, .mp2, .run {
-    display: flex;
-    align-items: flex-end;
-    height: 200px;
-    width: 200px;
-    background-color: rgb(25, 12, 138);
-    padding: 10px solid blue;
-    color: whitesmoke;
-} 
-
-
-footer ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 20px;
-}
-
-footer a {
-    padding: 10px;
 }
 
