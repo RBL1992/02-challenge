@@ -42,5 +42,75 @@ nav {
 
 main {
     display: flex;
+    flex-direction: column;
 }
 
+.aboutme {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border: 10px;
+    margin: 10px;
+
+}
+.aboutme h2 {
+    font-size: larger;
+    padding: 10px;
+    border: 10px black;
+    /* border not working */
+}
+
+.aboutme section {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.aboutme img {
+    display: flex;
+    float: none;
+}
+
+.work {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border: 10px;
+    margin: 10px;
+
+}
+
+.work figure {
+    display: flex;
+    flex-direction: column;
+}
+
+.prework {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 10px;
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+}
+
+.refactor, .mp1, .mp2, .run {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    flex-wrap: wrap;
+    padding: 10px;
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+}
+
+.contactme {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border: 10px;
+    margin: 10px;
+
+}
