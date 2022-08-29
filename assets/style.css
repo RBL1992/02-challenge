@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .header {
    padding: 10px;
    background-color: darkgrey;
@@ -74,6 +78,7 @@ main {
 .work {
     display: flex;
     flex-direction: row;
+    font-size: larger;
     padding: 10px;
     border: 10px;
     margin: 10px;
@@ -109,8 +114,20 @@ main {
 .contactme {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding: 10px;
     border: 10px;
     margin: 10px;
 
 }
+
+.contactme h2 {
+    font-size: larger;
+}
+
+.contactme li {
+    display:inline-block;
+    padding: 10px;
+}
+
+@media only screen and (min-width:768px)
