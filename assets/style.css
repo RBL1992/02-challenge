@@ -1,18 +1,21 @@
 html {
     scroll-behavior: smooth;
 }
-
+body {
+    background-color: #1d3557;
+}
 .header {
    padding: 10px;
-   background-color: darkgrey;
+   background-color:#1d3557;
 }
 
 .header h1 {
     display: flex;
-    justify-content:center ;
+    justify-content:center;
+    align-items: center;
     height: 30px;
     width: 170px;
-    background-color: aquamarine;
+    background-color: #A8DADC;
     font-size: large;
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
 }
@@ -26,15 +29,15 @@ nav {
 .navbar a {
     display: inline-block;
     padding: 2px;
+    color: #F1FAEE;
 }
 
 .banner {
     display: flex; 
     justify-content: flex-end;
-    color: brown;
+    background-color: #A8DADC;
+    color: #1d3557;
     height: 60px;
-    background-color: blue;
-    
 }
 
 .banner h2 {
@@ -60,13 +63,15 @@ main {
 .aboutme h2 {
     font-size: larger;
     padding: 10px;
-    border: 10px black;
+    border-right: 10px solid black;
+    margin-right: 10px;
     /* border not working */
 }
 
 .aboutme section {
     display: flex;
     flex-direction: row;
+    color: #F1FAEE
     
 }
 
@@ -79,15 +84,21 @@ main {
     display: flex;
     flex-direction: row;
     font-size: larger;
-    padding: 10px;
-    border: 10px;
-    margin: 10px;
+    padding: 20px;
 
+}
+
+.work h2 {
+    font-size: larger;
+    padding: 10px;
+    border-right: 10px solid black;
+    margin-right: 10px; 
 }
 
 .work figure {
     display: flex;
     flex-direction: column;
+    padding: 5px;
 }
 
 .prework {
@@ -106,8 +117,8 @@ main {
     justify-content: end;
     flex-wrap: wrap;
     padding: 10px;
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
     background-color: blue;
 }
 
@@ -123,11 +134,27 @@ main {
 
 .contactme h2 {
     font-size: larger;
+    padding: 10px;
+    border-right: 10px solid black;
+    margin-right: 10px;
 }
 
 .contactme li {
-    display:inline-block;
+    display:flex;
+    flex-direction: row;
+    justify-content: end;
     padding: 10px;
 }
 
-@media only screen and (min-width:768px)
+@media screen and (max-width:992px){
+    .figure {
+        width: 50%;
+    }
+}
+
+@media screen and (max-widht:600px) {
+    .figure {
+        width: 100%;
+    };
+    
+}
