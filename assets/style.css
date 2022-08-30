@@ -30,6 +30,7 @@ nav {
     display: inline-block;
     padding: 2px;
     color: #F1FAEE;
+    text-decoration: none;
 }
 
 .banner {
@@ -65,7 +66,6 @@ main {
     padding: 10px;
     border-right: 10px solid black;
     margin-right: 10px;
-    /* border not working */
 }
 
 .aboutme section {
@@ -144,17 +144,4 @@ main {
     flex-direction: row;
     justify-content: end;
     padding: 10px;
-}
-
-@media screen and (max-width:992px){
-    .figure {
-        width: 50%;
-    }
-}
-
-@media screen and (max-widht:600px) {
-    .figure {
-        width: 100%;
-    };
-    
 }
