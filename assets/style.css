@@ -1,23 +1,25 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     background-color: #1d3557;
 }
+
 .header {
-   padding: 10px;
-   background-color:#1d3557;
+    padding: 10px;
+    background-color: #1d3557;
 }
 
 .header h1 {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     height: 30px;
     width: 170px;
     background-color: #A8DADC;
     font-size: large;
-   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 nav {
@@ -30,11 +32,10 @@ nav {
     display: inline-block;
     padding: 2px;
     color: #F1FAEE;
-    text-decoration: none;
 }
 
 .banner {
-    display: flex; 
+    display: flex;
     justify-content: flex-end;
     background-color: #A8DADC;
     color: #1d3557;
@@ -61,6 +62,7 @@ main {
     margin: 10px;
 
 }
+
 .aboutme h2 {
     font-size: larger;
     padding: 10px;
@@ -71,8 +73,7 @@ main {
 .aboutme section {
     display: flex;
     flex-direction: row;
-    color: #F1FAEE
-    
+    color: #F1FAEE;
 }
 
 .aboutme img {
@@ -82,43 +83,55 @@ main {
 
 .work {
     display: flex;
-    flex-direction: row;
+    /* flex-wrap: wrap; */
     font-size: larger;
     padding: 20px;
 
 }
 
-.work h2 {
+.workcontainer {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.work h2 { 
     font-size: larger;
     padding: 10px;
     border-right: 10px solid black;
-    margin-right: 10px; 
-}
+    margin-right: 10px;
+    height: 500px;
+} 
 
 .work figure {
     display: flex;
     flex-direction: column;
+    /* flex-wrap: wrap; */
     padding: 5px;
 }
 
 .prework {
     display: flex;
-    flex-direction: column;
-    justify-content: end;
-    padding: 10px;
+    justify-content: start;
+    align-items: flex-end;
+    background-image: url(./images/skyeandi.jpeg);
+    width: 600px ;
     height: 300px;
-    width: 300px;
-    background-color: blue;
+    border: 10px solid black;
 }
 
-.refactor, .mp1, .mp2, .run {
+
+.refactor,
+.mp1,
+.mp2,
+.run {
     display: flex;
     flex-direction: column;
     justify-content: end;
     flex-wrap: wrap;
     padding: 10px;
-    height: 120px;
-    width: 120px;
+    height: 150px;
+    width: 300px;
     background-color: blue;
 }
 
@@ -139,9 +152,18 @@ main {
     margin-right: 10px;
 }
 
-.contactme li {
-    display:flex;
-    flex-direction: row;
-    justify-content: end;
-    padding: 10px;
+.contactme ul {
+    display: flex;
+    flex-direction:row;
+    justify-content:left;
+}
+
+.contactme ul li {
+    margin: 15%;
+}
+
+@media screen and (max-width: 992px) {
+    .main {
+        max-width: 100vw;
+    }
 }
