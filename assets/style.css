@@ -49,41 +49,34 @@ nav {
     padding: 10px 10px;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-}
-
 .aboutme {
     display: flex;
     flex-direction: row;
-    padding: 10px;
-    border: 10px;
-    margin: 10px;
+    padding: 11px;
+    border: 11px;
+    margin: 11px;
 
 }
 
 .aboutme h2 {
     font-size: larger;
-    padding: 10px;
-    border-right: 10px solid black;
-    margin-right: 10px;
 }
 
 .aboutme section {
     display: flex;
     flex-direction: row;
+    padding: 10px;
+    border-left: 10px solid black;
     color: #F1FAEE;
 }
 
 .aboutme img {
-    display: flex;
-    float: none;
+    float:left;
 }
 
 .work {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     font-size: larger;
     padding: 20px;
 
@@ -95,75 +88,77 @@ main {
 
 }
 
-.work h2 { 
+h2 { 
     font-size: larger;
     padding: 10px;
-    border-right: 10px solid black;
     margin-right: 10px;
-    height: 500px;
+    float: left;
 } 
 
-.work figure {
+.container {
     display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
-    padding: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-left: 10px solid black;
 }
 
 .prework {
-    display: flex;
-    justify-content: start;
-    align-items: flex-end;
     background-image: url(./images/skyeandi.jpeg);
-    width: 600px ;
+    width: 90% ;
     height: 300px;
     border: 10px solid black;
 }
 
-
-.refactor,
-.mp1,
-.mp2,
-.run {
+.smallcontainer {
     display: flex;
-    flex-direction: column;
-    justify-content: end;
-    flex-wrap: wrap;
-    padding: 10px;
+    align-items: flex-end;
+    width: 40%;
     height: 150px;
-    width: 300px;
-    background-color: blue;
+    border: 10px solid black;
+    margin: 10px;
+}
+
+.refactor {
+    background-image: url(./images/grey.jpeg);
+    color: antiquewhite;
+}
+
+.mp1 {
+    background-image: url(./images/hiddenlake.jpeg);
+    color: antiquewhite; 
+}
+.mp2 {
+    background-image: url(./images/loganpass.jpeg);
+    color: antiquewhite;
+}
+.run {
+    background-image: url(./images/bandlands.jpeg);
+    color: antiquewhite;
 }
 
 .contactme {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
-    border: 10px;
-    margin: 10px;
-
-}
-
-.contactme h2 {
-    font-size: larger;
-    padding: 10px;
-    border-right: 10px solid black;
-    margin-right: 10px;
 }
 
 .contactme ul {
     display: flex;
     flex-direction:row;
-    justify-content:left;
+    padding: 10px;
+    border-left: 10px solid black;
+    justify-content:space-around;
+    width: 100%;
 }
 
-.contactme ul li {
-    margin: 15%;
+.contactme ul li a {
+    padding: 15px;
+    color: #A8DADC;
 }
 
-@media screen and (max-width: 992px) {
-    .main {
-        max-width: 100vw;
-    }
+@media screen and (max-width: 768px){
+.aboutme, .workcontainer, .contactme, h2 {
+    flex-direction: column;
+} 
+
 }
+    
